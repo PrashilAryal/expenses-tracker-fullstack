@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "prashil",
+    "password": "prashil",
+    "database": "exptracker",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "prashil",
+    "password": "prashil",
+    "database": "exptracker",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "prashil",
+    "password": "prashil",
+    "database": "exptracker",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
