@@ -69,7 +69,7 @@ const Model = ({ mode, setShowModel, getData, transaction }) => {
     <div className="overlay">
       <div className="model">
         <div className="form-title-container">
-          <h3>{mode} Transaction</h3>
+          <h3>{mode} transaction</h3>
           <button onClick={() => setShowModel(false)}>X</button>
         </div>
         <form>
@@ -79,6 +79,36 @@ const Model = ({ mode, setShowModel, getData, transaction }) => {
             onChange={handleChange}
             name="id"
           ></input>
+          <label htmlFor="type">Type</label>
+          <select onChange={handleChange} name="type" defaultValue={data?.type}>
+            <option hidden disabled selected value={data?.type && data.type}>
+              {data?.type ? data.type : "Select Type"}
+            </option>
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+          <br />
+          <label htmlFor="category">Category</label>
+          <select
+            onChange={handleChange}
+            name="category_name"
+            defaultValue={data?.category_name}
+          >
+            <option
+              hidden
+              disabled
+              selected
+              value={data?.category_name && data.category_name}
+            >
+              {data?.category_name ? data.category_name : "Select Category"}
+            </option>
+            <option value="food">Food</option>
+            <option value="transportation">Transportation</option>
+            <option value="shopping">Shopping</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="others">Others</option>
+          </select>
+          <br />
           <label htmlFor="title">Title</label>
           <input
             required
@@ -89,15 +119,7 @@ const Model = ({ mode, setShowModel, getData, transaction }) => {
             onChange={handleChange}
           />
           <br />
-          <label htmlFor="type">Type</label>
 
-          <select onChange={handleChange} name="type" defaultValue={data?.type}>
-            <option hidden disabled selected value={data?.type && data.type}>
-              {data?.type ? data.type : "Select Category"}
-            </option>
-            <option value="expense">Expense</option>
-            <option value="income">Income</option>
-          </select>
           <label htmlFor="amount">Amount</label>
           <input
             required
@@ -128,28 +150,10 @@ const Model = ({ mode, setShowModel, getData, transaction }) => {
             value={data.user_email}
             onChange={handleChange}
           />
-          <label htmlFor="category">Category</label>
-          <select
-            onChange={handleChange}
-            name="category_name"
-            defaultValue={data?.category_name}
-          >
-            <option
-              hidden
-              disabled
-              selected
-              value={data?.category_name && data.category_name}
-            >
-              {data?.category_name ? data.category_name : "Select Category"}
-            </option>
-            <option value="food">Food</option>
-            <option value="transportation">Transportation</option>
-            <option value="shopping">Shopping</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="others">Others</option>
-          </select>
+
           <button
-            className={mode + "-btn"}
+            // className={mode + "-btn"}
+            className="edit-button"
             type="submit"
             onClick={editMode ? editData : postData}
           >

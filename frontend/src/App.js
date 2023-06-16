@@ -63,13 +63,18 @@ const App = () => {
           <ListHeader appName={"Trackie"} getData={getData} />
           <p className="user-email">Hi, {userEmail}</p>
           <div className="dashboard-container">
-            <p className="total-balance">Balance: Rs.{getTotalBalance()}</p>
+            <p className="total-balance">
+              BALANCE <br />
+              Rs.{getTotalBalance()}
+            </p>
             <div>
               <p className="total-expenses">
-                Total Expenses: Rs.{getExpenseTotal()}
+                Total Expenses <br />
+                Rs.{getExpenseTotal()}
               </p>
               <p className="total-income">
-                Total Income: Rs.{getIncomeTotal()}
+                Total Income <br />
+                Rs.{getIncomeTotal()}
               </p>
             </div>
           </div>

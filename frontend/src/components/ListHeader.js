@@ -16,10 +16,12 @@ const ListHeader = ({ appName, getData }) => {
     <div className="list-header">
       <h1 className="appName">{appName}</h1>
       <div className="button-container">
-        <button className="create-btn" onClick={() => setShowModel(true)}>
+        <button className="edit-button" onClick={() => setShowModel(true)}>
+          {/* create-btn */}
           Add New
         </button>
-        <button className="sign-out-btn" onClick={signOut}>
+        <button className="delete-button" onClick={signOut}>
+          {/* sign-out-btn */}
           Sign Out
         </button>
       </div>

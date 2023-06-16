@@ -78,7 +78,8 @@ const Auth = () => {
           )}
           <input
             type="submit"
-            className="create-btn"
+            className="edit-button"
+            value="Let's Go"
             onClick={(e) => handleSubmit(e, isLoggedIn ? "login" : "signup")}
           />
           {error && <p>{error}</p>}
