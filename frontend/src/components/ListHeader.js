@@ -18,7 +18,7 @@ const ListHeader = ({ appName, getData }) => {
       <div className="button-container">
         <button className="edit-button" onClick={() => setShowModel(true)}>
           {/* create-btn */}
-          Add New
+          New Transaction
         </button>
         <button className="delete-button" onClick={signOut}>
           {/* sign-out-btn */}

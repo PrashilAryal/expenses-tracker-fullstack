@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(233, 241, 249);
+  /* background-color: navy; */
   display: flex;
   justify-content: center;
   font-family: "Trebuchet MS", Arial, sans-serif;
@@ -58,7 +59,8 @@ input {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: rgba(0, 0, 0, 0.05) 1px solid;
+  /* border-bottom: rgba(0, 0, 0, 0.05) 1px solid; */
+  border-bottom: rgba(32, 42, 68, 0.5) 1px solid;
 }
 
 /* List Item */
@@ -148,7 +150,7 @@ input {
   color: rgb(114, 114, 114);
 }
 .appName {
-  color: blue;
+  color: navy;
 }
 
 .dashboard-container {
@@ -229,7 +231,8 @@ input {
   margin-right: 10px;
 }
 .edit-button {
-  background-color: #1e88e5;
+  /* background-color: #1e88e5; */
+  background-color: navy;
 }
 .delete-button {
   background-color: rgb(234, 58, 58);
